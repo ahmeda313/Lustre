@@ -9,15 +9,15 @@ const valid = {
   date: todayISO(),
   time: "10:00 — 12:00",
   name: "A Rao",
-  phone: "+91 98450 21006",
+  phone: "+91 79750 52435",
   address: "12, 4th Main, Indiranagar, Bengaluru",
 };
 
 describe("normalisePhone", () => {
   it("strips spaces, punctuation, +91 and a leading zero", () => {
-    expect(normalisePhone("+91 98450 21006")).toBe("9845021006");
-    expect(normalisePhone("098450-21006")).toBe("9845021006");
-    expect(normalisePhone("(98450) 21006")).toBe("9845021006");
+    expect(normalisePhone("+91 79750 52435")).toBe("7975052435");
+    expect(normalisePhone("079750-52435")).toBe("7975052435");
+    expect(normalisePhone("(79750) 52435")).toBe("7975052435");
   });
 });
 
@@ -26,7 +26,7 @@ describe("bookingSchema", () => {
     const result = bookingSchema.safeParse(valid);
     expect(result.success).toBe(true);
     if (result.success) {
-      expect(result.data.phone).toBe("9845021006");
+      expect(result.data.phone).toBe("7975052435");
       expect(result.data.name).toBe("A Rao");
     }
   });

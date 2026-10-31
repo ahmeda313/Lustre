@@ -1,8 +1,8 @@
 export const contact = {
-  phone: "+91 98450 21006",
-  phoneHref: "+919845021006",
-  whatsapp: "919845021006",
-  email: "hello@lustre.in",
+  phone: "+91 79750 52435",
+  phoneHref: "+917975052435",
+  whatsapp: "917975052435",
+  email: "rayan@lustre.in",
   city: "Bengaluru",
   region: "Karnataka",
   country: "IN",
