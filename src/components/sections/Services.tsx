@@ -23,7 +23,7 @@ export function Services() {
               One <em className="italic">standard.</em>
             </span>,
           ]}
-          intro="Two washes, done by hand. No machines, no shortcuts, no add-ons."
+          intro="Two washes, done by hand. no shortcuts, no add-ons."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-16 md:mt-24 md:grid-cols-2 md:gap-10 lg:gap-14 xl:gap-20">
